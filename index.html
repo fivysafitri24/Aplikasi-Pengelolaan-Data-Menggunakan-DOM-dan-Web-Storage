@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bookself Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="content">
+        <h1>SUBMISSION WEBSITE PEMULA</h1>
+      </div>
+    </nav>
+  </header>
+  <div class="content">
+    <div class="col-1">
+      <div class="user-info my-container">
+        <div class="user-img">
+          <img src="author.jpeg" alt="author">
+        </div>
+        <h1 class="username">Fivy Nur Safitri</h1>
+        <p class="bio">Programmer Pemula</p>
+        <p class="bio">FEBE 09</p>
+      </div>
+      <div class="form isi">
+        <section class="my-container">
+          <h3>Isikan data buku disini :</h3>
+          <form id="form">
+            <div class="input-group">
+                <input type="text" id="title" placeholder="Judul Buku" class="input-form"
+                    maxlength="120">
+            </div>
+            <div class="input-group">
+                <input type="text" id="author" placeholder="Author" class="input-form"
+                    maxlength="60">
+            </div>
+            <div class="input-group">
+                <input type="date" id="date" 
+                    class="input-form" min="1900" max="2030" placeholder="tanggal Terbit">
+            </div>
+            <div class="button-group">
+                <button type="reset" class="close" id="close">Reset</button>
+                <button type="submit" id="submit">Save</button>
+            </div>
+        </form>
+        </section>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="my-container welcome">
+        <h1>Welcome in Bookshelf Apps</h1>
+        <p>Kelola Buku kalian agar lebih tertata bersama Bookshelf Apps</p>
+      </div>
+      <div class="content-book">
+        <div class="unread" id="unread">
+          <h4 class="">Belum Dibaca</h4>
+          <div class="list-item" id="books" class="check-button"></div>
+        </div>
+         <div class="read" id="read">
+          <h4>Sudah Dibaca</h4>
+          <div class="list-item" id="completed-books"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="isian.js" type="text/javascript"></script>
+</body>
+</html>

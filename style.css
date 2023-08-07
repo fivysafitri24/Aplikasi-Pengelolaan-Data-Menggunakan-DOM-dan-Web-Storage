@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lemonada', cursive;
+}
+body {
+  height: 2000px;
+  background: aliceblue;
+}
+h1 {
+  color: rgba(90, 80, 89, 1) ;
+}
+p {
+  color: rgba(185, 201, 247, 1) ;
+}
+nav {
+  padding-top: 100px;
+  padding-left: 250px;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(45deg, rgba(89, 92, 244, 0.7), rgba(244, 91, 167, .7));
+  font-weight: 700;
+  font-size: xx-large;
+}
+input, button {
+  font-size: 12px;
+  background-color: aliceblue;
+}
+form input {
+  height: 10px;
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+  border: 1px solid rgba(89, 156, 244, 0.7);
+  color: rgba(90, 80, 89, 1);
+  font-size: small;
+  border-radius: 5px 5px 5px 5px;
+}
+form button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background:linear-gradient(45deg, rgba(244, 91, 167, .7), rgba(89, 92, 244, 0.7));
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  height: 41px;
+}
+
+.check-button {
+  background: url('../assets/check-outline.svg');
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background: url('../assets/check-solid.svg');
+  background-size: contain;
+}
+
+.trash-button {
+  background: url('../assets/trash-outline.svg');
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  margin-left: 370px;
+  cursor: pointer;
+  border: none;
+}
+
+.trash-button:hover {
+  background: url('../assets/trash-fill.svg');
+  background-size: contain;
+}
+
+.undo-button {
+  background: url('../assets/undo-ouline.svg');
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 15px;
+  left: 100px;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button:hover {
+  background: url('../assets/undo-ouline.svg');
+  background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+  outline: none;
+}
+#form isi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+}
+#form input {
+  width: 75% ;
+  border-radius: 10px 
+}
+.mt-2 {
+  margin-top: 10px;
+}
+.my-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+  padding: 25px;
+  margin-top: 10px;
+}
+.content {
+  width: 100%;
+  display: flex;
+  margin-top: -45px;
+  box-sizing: border-box;
+}
+.col-1 {
+  padding: 5px;
+  width: 30%;
+}
+.col-2 {
+  padding: 5px;
+  width: 70% ;
+}
+.user-info {
+  position: relative;
+}
+.user-info .user-img img{
+  height: 80px;
+  width: 70px;
+  border-radius: 30%;
+  top: 0;
+  left: 11%;
+  background: #fff;
+  padding: 4px;
+  margin-top: -40px ;
+  position: absolute;
+}
+.user-info .username {
+  padding-top: 30px;
+  color: rgba(89, 138, 244, 0.7);
+}
+.user-info .bio {
+  color: rgba(185, 201, 247, 1);
+  font-size: 12px;
+}
+.content-book {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.unread, .read {
+  box-sizing: border-box;
+  width: 49.3%;
+}
+.read h4,
+.unread h4 {
+  text-align: center;
+  margin-top: 15px;
+}
+.read .my-container ,
+.unread .my-container  {
+  display: flex;
+  margin-top: 10px;
+  padding: 5px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+.list-item{
+  
+  margin-top: 10px;
+  font-size: medium;
+}
+
+@media screen and (max-width: 576px) {
+  .content,
+  .content-book {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .unread, 
+  .read {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content,
+  .content-book {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .unread, 
+  .read {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+.inner {
+  position: relative;
+  padding: 2em;
+}
+
+.item-shadow {
+  background-color: white;
+  margin-top: 2em;
+  border-radius: 20px;
+}
